@@ -1,0 +1,184 @@
+/* ============================================================== CSS-VARIABLES ==================================================================== */
+:root {
+  --main-text-color: #434455;
+  --main-titles-color: #2e2f42;
+  --main-background-color: #ffffff;
+  --accent-color: #404bbf;
+
+  --logo-ivariable-part-color: #4d5ae5;
+  --logo-light-part-color: #f4f4fd;
+  --logo-dark-part-color: #2e2f42;
+
+  --hero-titles-color: #ffffff;
+
+  --buttons-titles-color: #4d5ae5;
+  --buttons-background-color: #e7e9fc;
+  --buttons-hover-color: #ffffff;
+
+  --dark-sections-color: #f4f4fd;
+  --hero-and-footer-background-color: #2e2f42;
+
+  --footer-text-color: #e7e9fc;
+}
+/* ==================================================== REMOVERS OF PREDEFINED TAG PROPERTIES =================================================== */
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+/* ==================================================================== BODY ===================================================================== */
+body {
+  font-family: 'Roboto', sans-serif;
+  /* font-weight: 400;                                                       ====> basic paragraph font-weight, predefined by a browser by default */
+  /* font-size: 16px;                                                        ====> basic paragraph font-size, predefined by a browser by default */
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  background-color: var(--main-background-color);
+}
+/* ================================================================= COMPONENTS ================================================================== */
+
+/*  ------- [LOGO] -------- */
+
+.logo-invariable-part,
+.logo-dark-part,
+.logo-light-part {
+  font-family: 'Raleway', sans-serif;
+  /* font-weight: 800;                                                         ====> the only pre-connected font of the above-mentioned font-family*/
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-invariable-part {
+  color: var(--logo-ivariable-part-color);
+}
+
+.logo-dark-part {
+  color: var(--logo-dark-part-color);
+}
+
+.logo-light-part {
+  color: var(--logo-light-part-color);
+}
+
+/* -------- [BUTTONS] -------- */
+
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--buttons-titles-color);
+  background-color: var(--buttons-background-color);
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--buttons-hover-color);
+  background-color: var(--accent-color);
+}
+/* ===================================================================== HEADER ====================================================================== */
+.menu-link {
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--main-titles-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
+.contact-link {
+  font-style: normal;
+  line-height: 1.5;
+  color: var(--main-text-color);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+/* ================================================================== HERO SECTION =================================================================== */
+.hero,
+.footer {
+  background-color: var(--hero-and-footer-background-color);
+}
+
+.hero-title {
+  /* font-weight: 700;                                                                ====> basic <h> font-weight (bold), predefined by a browser by default */
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--hero-titles-color);
+}
+
+.hero-button {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--hero-titles-color);
+  background-color: var(--buttons-titles-color);
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--accent-color);
+}
+/* =================================================================== OTHER SECTIONS ==================================================================== */
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--main-titles-color);
+}
+.dark-section {
+  background-color: var(--dark-sections-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.advantage-title,
+.project-title,
+.team-member-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--main-titles-color);
+}
+
+.advantage-description,
+.project-subtitle,
+.team-member-position {
+  line-height: 1.5;
+  color: var(--main-text-color);
+}
+
+.team-member-card {
+  background-color: var(--main-background-color);
+}
+/* ====================================================================== FOOTER ======================================================================= */
+.footer-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--footer-text-color);
+}
